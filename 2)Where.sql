@@ -35,3 +35,18 @@ select * from Products as p
 --where p.UnitPrice >10 and p.UnitPrice < 20
 where p.UnitPrice between 10 and 20
 order by UnitsInStock desc
+
+
+--like 
+
+-- içerisinde geçen....
+select * from Products
+where ProductName like '%Ch%'
+
+-- baþlayan...
+select * from Products
+where ProductName like 'Ch%'
+
+-- bitenler....
+select * from Products
+where ProductName like '%i'
